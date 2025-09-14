@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "server": "tsx watch server/index.ts",
+    "typecheck": "tsc --noEmit",
     "dev:all": "npm run server & npm run dev"
   },
   "keywords": [],
@@ -15,8 +16,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@tanstack/query-db-collection": "^0.1.2",
-    "@tanstack/react-db": "^0.1.0",
+    "@tanstack/query-core": "^5.87.1",
+    "@tanstack/query-db-collection": "^0.2.11",
+    "@tanstack/react-db": "^0.1.12",
     "cors": "^2.8.5",
     "express": "^5.1.0"
   },
